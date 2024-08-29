@@ -43,7 +43,7 @@ author_profile: true
         }
 
         .pdf-wrapper iframe {
-            width: 90%;
+            width: 100%;
             height: 100%;
         }
     }
@@ -52,7 +52,7 @@ author_profile: true
     @media only screen and (max-width: 480px) {
         .pdf-wrapper {
             width: 100%; /* Full width of the screen */
-            padding-bottom: 141.42%; /* Maintain aspect ratio */
+/*             padding-bottom: 141.42%; /* Maintain aspect ratio */ */
             margin: 0 auto;
         }
 

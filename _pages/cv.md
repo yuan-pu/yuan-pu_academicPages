@@ -62,7 +62,7 @@ author_profile: true
 <!--   <object data="/files/cv.pdf#zoom=auto" type="application/pdf">
     <p>Your browser does not support PDFs. <a href="/files/cv.pdf">Download the PDF</a>.</p>
   </object> -->
-  <object data="/files/cv.pdf#zoom=auto" type="application/pdf">
-        <embed src="/files/cv.pdf#zoom=auto" type="application/pdf" />
+  <object data="/files/cv.pdf" type="application/pdf">
+        <embed src="/files/cv.pdf" type="application/pdf" />
     </object>
 </div>

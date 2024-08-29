@@ -16,7 +16,7 @@ author_profile: true
 
 
 <style>
-    /* Container for the iframe to manage responsive behavior */
+    /* Container for the object to manage responsive behavior */
     .pdf-wrapper {
         position: relative;
         width: 100%; /* Full width of the section/container */
@@ -24,8 +24,8 @@ author_profile: true
         overflow: auto; /* Allow scrolling */
     }
 
-    /* The iframe itself */
-    .pdf-wrapper iframe {
+    /* The object itself */
+    .pdf-wrapper object {
         width: 100%;
         height: 100%;
         border: none; /* Remove border for a cleaner look */
@@ -37,7 +37,7 @@ author_profile: true
             height: 100vh; /* Ensure full viewport height */
         }
 
-        .pdf-wrapper iframe {
+        .pdf-wrapper object {
             width: 100%;
             height: 100%;
         }
@@ -50,14 +50,16 @@ author_profile: true
             margin: 0 auto;
         }
 
-        .pdf-wrapper iframe {
+        .pdf-wrapper object {
             width: 100%;
             height: 100%;
         }
     }
 </style>
 
-<!-- Responsive iframe for the PDF -->
+<!-- Responsive object for the PDF -->
 <div class="pdf-wrapper">
-  <iframe src="/files/cv.pdf#zoom=auto" type="application/pdf"></iframe>
+  <object data="/files/cv.pdf#zoom=auto" type="application/pdf">
+    <p>Your browser does not support PDFs. <a href="/files/cv.pdf">Download the PDF</a>.</p>
+  </object>
 </div>

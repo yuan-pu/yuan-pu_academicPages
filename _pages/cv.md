@@ -7,13 +7,6 @@ author_profile: true
 
 <h5> Last updated: Aug 29, 2024 </h5>
 
-<!-- <iframe src="/files/cv.pdf#view=Fit" width=100vh style="height: 100vh; border: none;"></iframe> -->
-
-<!-- <div style="width: 100%; height: 100vh;">
-  <embed src="/files/cv.pdf#view=Fit" type="application/pdf" width="100%" height=80vh />
-  <embed src="/files/cv.pdf#view=Fit" type="application/pdf" width="100%" height="100%" style="border: none;">
-</div> -->
-
 
 <style>
     /* Container for the iframe to manage responsive behavior */
@@ -60,5 +53,27 @@ author_profile: true
 
 <!-- Responsive iframe for the PDF -->
 <div class="pdf-wrapper">
-  <iframe src="/files/cv.pdf#zoom=auto&scrollbar=1" type="application/pdf"></iframe>
+  <iframe id="pdf-frame" src="/files/cv.pdf#zoom=auto&scrollbar=1" type="application/pdf"></iframe>
 </div>
+
+<script>
+    // Function to switch the PDF link based on screen size
+    function switchPDFLink() {
+        var iframe = document.getElementById('pdf-frame');
+        var screenWidth = window.innerWidth;
+
+        if (screenWidth <= 768) {
+            // Use Google Docs preview link for smaller screens
+            iframe.src = "https://drive.google.com/file/d/1YQQI0c3ysU20NTOYvtSIWDdMoJ8rmmqo/preview";
+        } else {
+            // Use the original file link for larger screens
+            iframe.src = "/files/cv.pdf#zoom=auto&scrollbar=1";
+        }
+    }
+
+    // Check screen size on page load
+    window.onload = switchPDFLink;
+
+    // Check screen size on window resize
+    window.onresize = switchPDFLink;
+</script>

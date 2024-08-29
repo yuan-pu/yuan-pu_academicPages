@@ -10,4 +10,4 @@ author_profile: true
 <!-- <embed src="/files/cv.pdf#view=Fit" type="application/pdf" width="100%" height="800px" /> -->
 
 <!-- Alternatively, you can use the iframe tag -->
-<iframe src="/assets/files/cv.pdf#view=Fit" width="100%" style="height: 100vh; border: none;"></iframe>
+<iframe src="files/cv.pdf#view=Fit" width="100%" style="height: 100vh; border: none;"></iframe>

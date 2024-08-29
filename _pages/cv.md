@@ -65,11 +65,6 @@ author_profile: true
 
 <!-- Responsive iframe for the PDF -->
 <div class="pdf-wrapper">
-    <iframe src="/files/cv.pdf#zoom=page-width" type="application/pdf"></iframe>
-</div>
-
-
-<!-- Responsive iframe for the PDF -->
-<div class="pdf-wrapper">
-    <iframe src="/files/cv.pdf#zoom=page-width" type="application/pdf"></iframe>
+<!--     <iframe src="/files/cv.pdf#zoom=page-width" type="application/pdf"></iframe> -->
+  <iframe src="/files/cv.pdf#zoom=fit" type="application/pdf"></iframe>
 </div>

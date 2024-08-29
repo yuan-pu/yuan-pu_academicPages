@@ -16,16 +16,20 @@ author_profile: true
 
 
 <style>
-    /* Container for the object to manage responsive behavior */
+    /* Container for the iframe to manage responsive behavior */
     .pdf-wrapper {
         position: relative;
         width: 100%; /* Full width of the section/container */
-        height: 100vh; /* Full height of the viewport */
-        overflow: auto; /* Allow scrolling */
+        height: 0;
+        padding-bottom: 100%; /* Ensures height scales with the width */
+        overflow: hidden;
     }
 
-    /* The object itself */
-    .pdf-wrapper object {
+    /* The iframe itself */
+    .pdf-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         border: none; /* Remove border for a cleaner look */
@@ -34,35 +38,27 @@ author_profile: true
     /* Adjustments for smaller screens */
     @media only screen and (max-width: 768px) {
         .pdf-wrapper {
-            height: 100vh; /* Ensure full viewport height */
+            width: 100%; /* Ensure full width */
+            padding-bottom: 141.42%; /* Adjust for typical A4 aspect ratio */
         }
 
-        .pdf-wrapper object {
+        .pdf-wrapper iframe {
             width: 100%;
             height: 100%;
         }
     }
 
-    /* Adjustments for very small screens */
-    @media only screen and (max-width: 480px) {
+    /* Adjustments for wide screens */
+    @media only screen and (min-width: 1024px) {
         .pdf-wrapper {
-            height: 100vh; /* Ensure full viewport height */
+            width: 100%; /* Use full width of the section/container */
+            padding-bottom: 141.42%; /* Maintain aspect ratio */
             margin: 0 auto;
-        }
-
-        .pdf-wrapper object {
-            width: 100%;
-            height: 100%;
         }
     }
 </style>
 
-<!-- Responsive object for the PDF -->
+<!-- Responsive iframe for the PDF -->
 <div class="pdf-wrapper">
-<!--   <object data="/files/cv.pdf#zoom=auto" type="application/pdf">
-    <p>Your browser does not support PDFs. <a href="/files/cv.pdf">Download the PDF</a>.</p>
-  </object> -->
-  <object data="/files/cv.pdf" type="application/pdf">
-        <embed src="/files/cv.pdf" type="application/pdf" />
-    </object>
+  <iframe src="/files/cv.pdf#zoom=auto&scrollbar=1" type="application/pdf"></iframe>
 </div>

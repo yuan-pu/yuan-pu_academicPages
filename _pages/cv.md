@@ -39,7 +39,7 @@ author_profile: true
     @media only screen and (max-width: 768px) {
         .pdf-wrapper {
             width: 100%; /* Ensure full width */
-            padding-bottom: 141.42%; /* Maintain aspect ratio */
+/*             padding-bottom: 141.42%; /* Maintain aspect ratio */ */
         }
 
         .pdf-wrapper iframe {

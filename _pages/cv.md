@@ -51,14 +51,14 @@ author_profile: true
     }
 </style>
 
-<!-- Responsive iframe for the PDF -->
 <div class="pdf-wrapper">
-  <iframe id="pdf-frame" src="/files/cv.pdf#zoom=auto&scrollbar=1" type="application/pdf"></iframe>
+  <!-- Empty iframe to be populated by JavaScript -->
+  <iframe id="pdf-frame" type="application/pdf"></iframe>
 </div>
 
 <script>
-    // Function to switch the PDF link based on screen size
-    function switchPDFLink() {
+    // Function to set the PDF link based on screen size
+    function setPDFLink() {
         var iframe = document.getElementById('pdf-frame');
         var screenWidth = window.innerWidth;
 
@@ -71,9 +71,9 @@ author_profile: true
         }
     }
 
-    // Check screen size on page load
-    window.onload = switchPDFLink;
+    // Set PDF link on page load
+    window.onload = setPDFLink;
 
-    // Check screen size on window resize
-    window.onresize = switchPDFLink;
+    // Update PDF link on window resize
+    window.onresize = setPDFLink;
 </script>

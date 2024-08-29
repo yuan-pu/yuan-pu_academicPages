@@ -43,7 +43,7 @@ author_profile: true
         }
 
         .pdf-wrapper iframe {
-            width: 100%;
+            width: 90%;
             height: 100%;
         }
     }

@@ -21,7 +21,7 @@ author_profile: true
         position: relative;
         width: 100%; /* Full width of the section/container */
         height: 0;
-        padding-bottom: 100%; /* Ensures height scales with the width */
+        padding-bottom: 141.42%; /* Adjust for typical A4 aspect ratio */
         overflow: hidden;
     }
 
@@ -39,7 +39,7 @@ author_profile: true
     @media only screen and (max-width: 768px) {
         .pdf-wrapper {
             width: 100%; /* Ensure full width */
-            padding-bottom: 141.42%; /* Adjust for typical A4 aspect ratio */
+            padding-bottom: 141.42%; /* Maintain aspect ratio */
         }
 
         .pdf-wrapper iframe {
@@ -48,15 +48,26 @@ author_profile: true
         }
     }
 
-    /* Adjustments for wide screens */
-    @media only screen and (min-width: 1024px) {
+    /* Adjustments for very small screens */
+    @media only screen and (max-width: 480px) {
         .pdf-wrapper {
-            width: 100%; /* Use full width of the section/container */
+            width: 100%; /* Full width of the screen */
             padding-bottom: 141.42%; /* Maintain aspect ratio */
             margin: 0 auto;
         }
+
+        .pdf-wrapper iframe {
+            width: 100%;
+            height: 100%;
+        }
     }
 </style>
+
+<!-- Responsive iframe for the PDF -->
+<div class="pdf-wrapper">
+    <iframe src="/files/cv.pdf#zoom=page-width" type="application/pdf"></iframe>
+</div>
+
 
 <!-- Responsive iframe for the PDF -->
 <div class="pdf-wrapper">

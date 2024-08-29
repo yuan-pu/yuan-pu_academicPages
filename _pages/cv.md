@@ -20,16 +20,12 @@ author_profile: true
     .pdf-wrapper {
         position: relative;
         width: 100%; /* Full width of the section/container */
-        height: 0;
-        padding-bottom: 141.42%; /* Adjust for typical A4 aspect ratio */
-        overflow: hidden;
+        height: 100vh; /* Full height of the viewport */
+        overflow: auto; /* Allow scrolling */
     }
 
     /* The iframe itself */
     .pdf-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
         border: none; /* Remove border for a cleaner look */
@@ -38,8 +34,7 @@ author_profile: true
     /* Adjustments for smaller screens */
     @media only screen and (max-width: 768px) {
         .pdf-wrapper {
-            width: 100%; /* Ensure full width */
-/*             padding-bottom: 141.42%; /* Maintain aspect ratio */ */
+            height: 100vh; /* Ensure full viewport height */
         }
 
         .pdf-wrapper iframe {
@@ -51,8 +46,7 @@ author_profile: true
     /* Adjustments for very small screens */
     @media only screen and (max-width: 480px) {
         .pdf-wrapper {
-            width: 100%; /* Full width of the screen */
-/*             padding-bottom: 141.42%; /* Maintain aspect ratio */ */
+            height: 100vh; /* Ensure full viewport height */
             margin: 0 auto;
         }
 
@@ -65,6 +59,5 @@ author_profile: true
 
 <!-- Responsive iframe for the PDF -->
 <div class="pdf-wrapper">
-<!--     <iframe src="/files/cv.pdf#zoom=page-width" type="application/pdf"></iframe> -->
   <iframe src="/files/cv.pdf#zoom=auto" type="application/pdf"></iframe>
 </div>

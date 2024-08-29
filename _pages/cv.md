@@ -37,13 +37,20 @@ author_profile: true
     /* Responsive height adjustments using media queries */
     @media only screen and (max-width: 768px) {
         .pdf-wrapper {
-            padding-top: 100%; /* Aspect ratio closer to 1:1 on smaller devices */
+            padding-top: 100%; /* Aspect ratio closer to 1:1 on tablets */
         }
     }
 
     @media only screen and (max-width: 480px) {
         .pdf-wrapper {
             padding-top: 125%; /* Aspect ratio for small devices */
+            width: 90%; /* Reduce width to 90% on small devices */
+            margin: 0 auto; /* Center the iframe */
+        }
+
+        .pdf-wrapper iframe {
+            width: 100%;
+            height: 100%;
         }
     }
 </style>
@@ -52,3 +59,4 @@ author_profile: true
 <div class="pdf-wrapper">
     <iframe src="/files/cv.pdf#view=Fit" type="application/pdf"></iframe>
 </div>
+

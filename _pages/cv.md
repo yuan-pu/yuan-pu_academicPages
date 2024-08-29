@@ -14,12 +14,13 @@ author_profile: true
   <embed src="/files/cv.pdf#view=Fit" type="application/pdf" width="100%" height="100%" style="border: none;">
 </div> -->
 
+
 <style>
     /* Container for the iframe to manage responsive behavior */
     .pdf-wrapper {
         position: relative;
         width: 100%;
-        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        padding-top: 130%; /* Ensures enough height to display the entire page on all screens */
         height: 0;
         overflow: hidden;
     }
@@ -34,26 +35,16 @@ author_profile: true
         border: none; /* Remove border for a cleaner look */
     }
 
-    /* Full-width on mobile screens */
-    @media only screen and (max-width: 768px) {
+    /* Adjustments for wide screens */
+    @media only screen and (min-width: 1024px) {
         .pdf-wrapper {
-            padding-top: 100%; /* Adjust the aspect ratio for mobile */
-            width: 100%;
-            margin: 0 auto;
-        }
-    }
-
-    @media only screen and (max-width: 480px) {
-        .pdf-wrapper {
-            padding-top: 120%; /* Adjust the aspect ratio for small screens */
-            width: 100%;
-            margin: 0 auto;
+            width: 80%; /* Shrinks the PDF display on wide screens */
+            margin: 0 auto; /* Center the iframe on wide screens */
         }
     }
 </style>
 
 <!-- Responsive iframe for the PDF -->
 <div class="pdf-wrapper">
-    <iframe src="/files/cv.pdf#zoom=100" type="application/pdf"></iframe>
+    <iframe src="/files/cv.pdf#zoom=page-fit" type="application/pdf"></iframe>
 </div>
-

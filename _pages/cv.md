@@ -1,11 +1,11 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 ---
 
-<h2>My Curriculum Vitae</h2>
+<h2>My Curriculum Vitae (last update: Aug 29, 2024) </h2>
 
 <!-- <embed src="/files/cv.pdf#view=Fit" type="application/pdf" width="100%" height="800px" /> -->
 

@@ -19,7 +19,7 @@ author_profile: true
     .pdf-wrapper {
         position: relative;
         width: 100%;
-        padding-top: 56.25%; /* 16:9 Aspect Ratio, adjust as needed */
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
         height: 0;
         overflow: hidden;
     }
@@ -34,39 +34,26 @@ author_profile: true
         border: none; /* Remove border for a cleaner look */
     }
 
-    /* Adjustments for medium screens (tablets, small desktops) */
-    @media only screen and (max-width: 1024px) {
-        .pdf-wrapper {
-            padding-top: 75%; /* 4:3 Aspect Ratio */
-        }
-    }
-
-    /* Adjustments for mobile screens */
+    /* Full-width on mobile screens */
     @media only screen and (max-width: 768px) {
         .pdf-wrapper {
-            padding-top: 100%; /* Aspect ratio closer to 1:1 */
-            width: 80%; /* Reduce width to 95% on mobile devices */
-            margin: 0 auto; /* Center the iframe */
-        }
-
-        .pdf-wrapper iframe {
+            padding-top: 100%; /* Adjust the aspect ratio for mobile */
             width: 100%;
-            height: 100%;
+            margin: 0 auto;
         }
     }
 
-    /* Further adjustment for very small mobile screens */
     @media only screen and (max-width: 480px) {
         .pdf-wrapper {
-            padding-top: 120%; /* Further adjustment for small screens */
-            width: 80%; /* Reduce width to 90% */
-            margin: 0 auto; /* Center the iframe */
+            padding-top: 120%; /* Adjust the aspect ratio for small screens */
+            width: 100%;
+            margin: 0 auto;
         }
     }
 </style>
 
 <!-- Responsive iframe for the PDF -->
 <div class="pdf-wrapper">
-    <iframe src="/files/cv.pdf#view=FitH" type="application/pdf"></iframe>
+    <iframe src="/files/cv.pdf#zoom=100" type="application/pdf"></iframe>
 </div>
 

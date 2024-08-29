@@ -51,29 +51,7 @@ author_profile: true
     }
 </style>
 
+<!-- Responsive iframe for the PDF -->
 <div class="pdf-wrapper">
-  <!-- Empty iframe to be populated by JavaScript -->
-  <iframe id="pdf-frame" type="application/pdf"></iframe>
+  <iframe src="https://drive.google.com/file/d/1YQQI0c3ysU20NTOYvtSIWDdMoJ8rmmqo/preview#zoom=auto" type="application/pdf"></iframe>
 </div>
-
-<script>
-    // Function to set the PDF link based on screen size
-    function setPDFLink() {
-        var iframe = document.getElementById('pdf-frame');
-        var screenWidth = window.innerWidth;
-
-        if (screenWidth <= 768) {
-            // Use Google Docs preview link for smaller screens
-            iframe.src = "https://drive.google.com/file/d/1YQQI0c3ysU20NTOYvtSIWDdMoJ8rmmqo/preview";
-        } else {
-            // Use the original file link for larger screens
-            iframe.src = "/files/cv.pdf#zoom=auto&scrollbar=1";
-        }
-    }
-
-    // Set PDF link on page load
-    window.onload = setPDFLink;
-
-    // Update PDF link on window resize
-    window.onresize = setPDFLink;
-</script>

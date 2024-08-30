@@ -13,7 +13,7 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : "Merriweather", Times, serif;
+$serif                      : "EB Garamond", Times, serif;
 $sans-serif                 : "Montserrat" -apple-system, ".SFNSText-Regular", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "San Francisco", Arial, sans-serif; // for easy unified use of "Merriweather", which is serif
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
@@ -28,9 +28,9 @@ $bodoni                     : "Bodoni MT", serif;
 $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
-$global-font-family         : "Montserrat", "Merriweather", $sans-serif; // sans-serif or serif
-$header-font-family         : "Montserrat", "Merriweather", $sans-serif; // sans-serif or serif
-$caption-font-family        : "Montserrat", "Merriweather", $sans-serif; // sans-serif or serif
+$global-font-family         : "EB Garamond", $serif; // sans-serif or serif
+$header-font-family         : "EB Garamond", $serif; // sans-serif or serif
+$caption-font-family        : "EB Garamond", $serif; // sans-serif or serif
 
 /* type scale */
 $type-size-1                : 2.441em;  // ~39.056px

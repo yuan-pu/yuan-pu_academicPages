@@ -7,7 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-<br>
 
 Hello, welcome to my home page!
 

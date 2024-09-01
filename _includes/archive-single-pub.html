@@ -1,0 +1,23 @@
+{% include base_path %}
+
+<div class="pub-item">
+  <p>
+    <strong>{{ post.authors }}</strong> - 
+    <em>{{ post.title }}</em>
+    {% if post.venue %}
+      - <span>{{ post.venue }}</span>
+    {% endif %}
+  </p>
+  <p>
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}">Paper</a>
+    {% endif %}
+    {% if post.slidesurl %}
+      | <a href="{{ post.slidesurl }}">Slides</a>
+    {% endif %}
+    {% if post.codeurl %}
+      | <a href="{{ post.codeurl }}">Code</a>
+    {% endif %}
+    <!-- Add other links similarly -->
+  </p>
+</div>

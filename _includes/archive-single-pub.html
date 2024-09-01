@@ -6,10 +6,17 @@
     {% if post.note %}
       - <span><em>{{ post.note }}</em></span>
     {% endif %}
-    - <span><strong>{{ post.title }}</strong></span>
+    - <span><strong>
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}">{{ post.title }}</a>
+      {% else %}
+        {{ post.title }}
+      {% endif %}
+    </strong></span>
     {% if post.venue %}
       - <span>{{ post.venue }}</span>
     {% endif %}
+  </p>
   </p>
   <p style="margin: -0.3em 0 0 0;">
     {% if post.paperurl %}

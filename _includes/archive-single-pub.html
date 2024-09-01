@@ -2,8 +2,10 @@
 
 <div class="pub-item", style="font-size: 0.9em;">
   <p>
-    <strong>{{ post.authors }}</strong> - 
-    <em>{{ post.title }}</em>
+    <span>{{ post.authors }}<span>
+    {% if post.note %}
+    <em>{{ post.note }}</em> - 
+    <strong>{{ post.title }}<strong>
     {% if post.venue %}
       - <span>{{ post.venue }}</span>
     {% endif %}

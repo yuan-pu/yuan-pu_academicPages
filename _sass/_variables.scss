@@ -13,8 +13,8 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : "Montserrat", Times, serif;
-$sans-serif                 : "Montserrat", -apple-system, ".SFNSText-Regular", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "San Francisco", Arial, sans-serif;
+$serif                      : "Montserrat", serif; // Times, 
+$sans-serif                 : "Montserrat", -apple-system, sans-serif; // ".SFNSText-Regular", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "San Francisco", Arial, 
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */

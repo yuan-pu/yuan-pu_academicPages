@@ -1,6 +1,7 @@
 {% include base_path %}
 
-<div class="pub-item" style="font-size: 0.9em; line-height: 1.4em;">
+<div class="pub-item"> 
+<!--   style="font-size: 0.9em; line-height: 1.4em;" -->
   <p style="margin: 0;">
     <span>{{ post.authors }}</span>
     {% if post.note %}
@@ -18,7 +19,7 @@
     {% endif %}
   </p>
   </p>
-  <p style="margin: -0.3em 0 0 0;">
+  <p style="margin: -1em 0 0 0;">
     {% if post.paperurl %}
       <a href="{{ post.paperurl }}">Paper</a>
     {% endif %}

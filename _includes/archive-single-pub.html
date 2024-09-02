@@ -18,8 +18,16 @@
       - <span>{{ post.venue }}</span>
     {% endif %}
   </p>
-  </p>
-  <p style="margin: -1em 0 0 0;">
+
+  {% if post.labels %}
+    <p style="margin: 0.2em 0;">
+      {% for label in post.labels %}
+        <span style="display: inline-block; background-color: #e0e0e0; color: #333; padding: 0.2em 0.4em; margin-right: 0.3em; border-radius: 3px; font-size: 0.8em;">{{ label }}</span>
+      {% endfor %}
+    </p>
+  {% endif %}
+  
+  <p>
     {% if post.paperurl %}
       <a href="{{ post.paperurl }}">Paper</a>
     {% endif %}

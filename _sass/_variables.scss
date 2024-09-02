@@ -13,7 +13,7 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : "Montserrat", serif; // Times, 
+$serif                      : serif; // Times, 
 $sans-serif                 : "Montserrat", -apple-system, sans-serif; // ".SFNSText-Regular", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "San Francisco", Arial, 
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
@@ -72,7 +72,7 @@ $primary-color              : #7a8288;
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
-$info-color                 : #3e8285; // #52adc8;
+$info-color                 : #518f91; // #3e8285; // #52adc8;
 
 /* brands */
 $behance-color              : #1769FF;

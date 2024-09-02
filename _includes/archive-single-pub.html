@@ -20,14 +20,14 @@
   </p>
 
   {% if post.labels %}
-    <p style="margin: 0.2em 0;">
-      {% for label in post.labels %}
-        <span style="display: inline-block; background-color: #e0e0e0; color: #333; padding: 0.2em 0.4em; margin-right: 0.3em; border-radius: 3px; font-size: 0.8em;">{{ label }}</span>
-      {% endfor %}
-    </p>
-  {% endif %}
+  <p style="margin: 0.2em 0;">
+    {% for label in post.labels %}
+      <span style="display: inline-block; background-color: #bdbfc1; color: #4a4f53; padding: 0.2em 0.4em; margin-right: 0.3em; border-radius: 3px; font-size: 0.8em;">{{ label }}</span>
+    {% endfor %}
+  </p>
+{% endif %}
   
-  <p>
+  <p style="margin: -2em 0 0 0;">
     {% if post.paperurl %}
       <a href="{{ post.paperurl }}">Paper</a>
     {% endif %}

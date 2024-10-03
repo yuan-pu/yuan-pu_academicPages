@@ -13,11 +13,9 @@ I’m Yuan Pu (浦媛), a Postgraduate Research Assistant at the Yale School of 
 
 I’m passionate about leveraging machine learning, particularly deep learning, as a tool to explore and address biological and biomedical questions.
 
-<div style="font-size: 0.8em;">
 <h2> Recent Updates </h2>
 
 - **May 2024**: I had the pleasure of presenting our paper [Human-Algorithmic Interaction Using a Large Language Model-Augmented AI Clinical Decision Support System](https://dl.acm.org/doi/full/10.1145/3613904.3642024) at CHI 2024 in beautiful Hawaii 🌺
 
 - **May 2023**: I graduated from Brown University with magna cum laude and Computational Biology departmental honors with my thesis [Deep Learning Models with Attention Mechanism for Predicting Gene Expression from Epigenetic Data in Glioblastoma Stem Cells](https://drive.google.com/file/d/1V-XBbWt-CVlA9yB2UEfOJDexYuDYr0B2/preview). I’m deeply thankful to everyone who supported and encouraged me throughout this journey 🐻
-</div>
 

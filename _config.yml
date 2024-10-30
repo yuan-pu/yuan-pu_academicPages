@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Yuan Pu"
 title_separator          : "-"
 name                     : &name "Yuan Pu"
-description              : &description "Post-graduate research assistant at Yale School of Medicine"
+description              : &description "Postgraduate associate at Yale School of Medicine"
 url                      : https://yuan-pu.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"

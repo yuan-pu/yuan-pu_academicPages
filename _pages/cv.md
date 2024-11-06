@@ -5,9 +5,6 @@ permalink: /cv/
 author_profile: true
 ---
 
-<h5> Last updated: Aug 29, 2024 </h5>
-
-
 <style>
     /* Container for the iframe to manage responsive behavior */
     .pdf-wrapper {

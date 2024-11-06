@@ -50,5 +50,5 @@ author_profile: true
 
 <!-- Responsive iframe for the PDF -->
 <div class="pdf-wrapper">
-  <iframe src="https://drive.google.com/file/d/1YQQI0c3ysU20NTOYvtSIWDdMoJ8rmmqo/preview#zoom=auto" type="application/pdf"></iframe>
+  <iframe src="https://drive.google.com/file/d/1vXdRTaM5eBbviWaqBJ_ptXL6L-D6yb6-/preview#zoom=auto" type="application/pdf"></iframe>
 </div>

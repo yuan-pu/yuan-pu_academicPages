@@ -80,6 +80,7 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
+   margin: 0 auto; // ADDED: Center the element horizontally
   // set width only, for non-square avatars
   // height: 36px;
 
@@ -92,6 +93,7 @@
   img {
     max-width: 175px;
     border-radius: 50%;
+     display: block; // ADDED: Center the image within its container
 
     @include breakpoint($large) {
       padding: 5px;

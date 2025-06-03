@@ -9,9 +9,9 @@ redirect_from:
 
 Hello, welcome to my home page!
 
-I’m Yuan Pu (浦媛), a Postgraduate Associate at the Yale School of Medicine, working under the mentorship of Dr. [Dennis Shung](https://medicine.yale.edu/profile/dennis-shung/). I graduated magna cum laude from Brown University in 2023 with a B.S. in Computational Biology, where I completed my honors thesis under the guidance of Dr. [Ritambhara Singh](https://ritambharasingh.com/). 
+I'm Yuan Pu (浦媛), an incoming Ph.D. student in Computer Science at Duke University. My research is focused on developing AI and machine learning methods to address critical problems in healthcare.
 
-My research interests lie in leveraging advanced computational methods to improve healthcare. I am especially eager to explore deep learning’s potential to enrich our understanding of human diseases and power systems that support clinical decision-making and improve patient outcomes.
+Previously, as a Postgraduate Associate at Yale School of Medicine, working under the mentorship of Dr. [Dennis Shung](https://scholar.google.com/citations?user=N-LePdMAAAAJ&hl=en). I graduated magna cum laude from Brown University in 2023 with a B.S. in Computational Biology, where I completed my honors thesis under the guidance of Dr. [Ritambhara Singh](https://ritambharasingh.com/). 
 
 <h2> Recent Updates </h2>
 

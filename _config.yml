@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Yuan Pu"
 title_separator          : "-"
 name                     : &name "Yuan Pu"
-description              : &description "Postgraduate associate at Yale School of Medicine"
+description              : &description "Incoming Ph.D. student at Duke"
 url                      : https://yuan-pu.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Yuan Pu"
   pronouns         : "she/her" # example: "she/her"  
-  bio              : "Postgraduate associate at Yale School of Medicine"
+  bio              : "Incoming Ph.D. student at Duke"
   location         : # "New Haven, CT"
   employer         : # "Yale School of Medicine"
   uri              : # URL
